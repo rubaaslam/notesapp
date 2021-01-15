@@ -1,0 +1,143 @@
+.notes-app {
+  width: 100%;
+}
+
+.app-title {
+  text-align: center;
+  background-color: darkkhaki;
+  padding: 1%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.notes-grid {
+  background-color: darkkhaki;
+  width: 40%;
+  margin-right: 2%;
+}
+
+.notes-grid-title {
+  text-align: center;
+  border: 2px solid;
+  margin: 5%;
+}
+
+.note-editor {
+    background-color: darkkhaki;
+    width: 100%;
+}
+
+.notes-editor-title {
+  text-align: center;
+  border: 2px solid;
+  margin: 2%;
+}
+
+.note {
+  background: white;
+  padding: 1%;
+  margin: 5%;
+  position: relative;
+  padding-left: 10%;
+}
+
+.note p {
+  width: 20%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note h2 {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note:hover{
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.24);
+  }
+
+.note__delete-button{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  color: red;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  cursor: pointer;
+}
+
+.note-editor__text-input {
+  width: 94%;
+  height: 150px !important;
+  resize: none;
+  padding: 15px 0px 50px 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 2%;
+}
+
+.note-editor__title {
+  width: 91%;
+  padding: 2%;
+  margin-left: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.note-editor__add-button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: #408e51;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5%;
+  float: right;
+  margin-bottom: 2%;
+}
+
+.note-editor__add-button:hover{
+    box-shadow:none;
+  }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modal-main {
+  position:fixed;
+  background: darkkhaki;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
