@@ -82,8 +82,8 @@ class Note extends React.Component{
               <textarea
                 className="note-editor__text-input"
                 placeholder="Enter your note here..."
-                onChange={this.updateText}
-                value={text}>
+                onChange={this.updateText}>
+                {text}
               </textarea>
             </div>
         </Modal>
@@ -115,7 +115,7 @@ class NoteEditor extends React.Component{
           className="note-editor__text-input"
           placeholder="Enter your note here..."
           onChange={this.handleChangeText}
-          value={text}>
+          value = {text}>
         </textarea>
         <button
           className="note-editor__add-button"
